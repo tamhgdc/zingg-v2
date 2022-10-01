@@ -1,0 +1,41 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--main-padding);
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.show-more-btn {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.week-chart {
+  margin-top: 100px;
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+}
+
+.week-chart-container {
+  // background-color: #2e2241;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}

@@ -1,0 +1,99 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--main-padding);
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.top {
+  display: flex;
+  gap: 240px;
+}
+
+.info {
+  width: 100%;
+}
+
+.thumb {
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 4rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.button-group {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lastest-song {
+  display: flex;
+  gap: 10px;
+}
+
+.lasted-song-thumb {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay {
+    font-size: 1.8rem;
+    background-color: rgba(black, 0.5);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+    opacity: 0;
+  }
+}
+
+.lasted-song-body {
+  font-weight: 500;
+
+  span {
+    font-size: 1rem;
+  }
+
+  .lasted-song-title {
+    font-size: 1.4rem;
+  }
+
+  .lasted-song-timestamp {
+    color: var(--gray-text);
+    font-size: 1.2rem;
+  }
+}

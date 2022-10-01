@@ -1,0 +1,151 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--main-padding);
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.album-info {
+  width: 300px;
+  position: sticky;
+  top: 0;
+  float: left;
+
+  .thumb {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: 200ms;
+    cursor: pointer;
+
+    &:hover img {
+      transform: scale(110%);
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+  }
+
+  .overlay {
+    background-color: rgba(black, 0.5);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 200ms;
+
+    .play-btn {
+      padding: 7px;
+      font-size: 1.7rem;
+      border: 1px solid var(--white);
+      border-radius: 999px;
+      display: flex;
+    }
+  }
+
+  .detail {
+    text-align: center;
+    color: var(--gray-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12px 0 16px;
+
+    .title {
+      color: var(--white);
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .updated-time {
+    }
+
+    .artist-links {
+    }
+
+    .favorites {
+    }
+  }
+
+  .footer {
+    text-align: center;
+
+    button {
+      display: inline-flex;
+    }
+
+    .actions {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      .action-btn {
+        color: var(--search-text) !important;
+        background-color: var(--dark-gray-bg);
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.album-songs {
+  flex: 1;
+  margin-left: 330px;
+
+  .heading {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .heading-text {
+    color: var(--gray-text);
+  }
+
+  .container {
+  }
+
+  .table-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: flex;
+
+    .song-name {
+      flex: 1;
+      margin-left: 40px;
+    }
+
+    .song-album {
+      width: 40%;
+    }
+
+    .song-duration {
+      width: 10%;
+      text-align: right;
+    }
+  }
+}
+
+.playing {
+  &.thumb {
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  img {
+    animation: spinner 5s linear infinite;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

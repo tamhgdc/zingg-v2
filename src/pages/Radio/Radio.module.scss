@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--main-padding);
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.banner-wrapper,
+.category-wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover img {
+    transform: scale(110%);
+  }
+}
