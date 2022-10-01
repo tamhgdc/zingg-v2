@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  width: 100%;
+  height: calc(100vh - var(--player-height));
+  display: flex;
+  background-color: green;
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  height: var(--player-height);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg);
+  display: flex;
+  overflow-y: overlay;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

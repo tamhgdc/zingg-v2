@@ -1,0 +1,111 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+:root {
+  --main-bg: #170f23;
+  --sidebar-bg: #231b2e;
+  --scrollbar-bg: #dadada;
+  --dark-gray-bg: #2f2739;
+  --active-tab-bg: #6d6875;
+  --player-bg: #120c1c;
+
+  --light-gray-text: #dadada;
+  --gray-text: #8b8791;
+  --alpha-gray-text: #77737e;
+  --dark-gray-text: #494352;
+  --search-text: #c3c2c4;
+  --disabled-text: #9c8bb6;
+  --unavailable-text: #85808b;
+
+  --purple: #7200a1;
+  --alpha-purple: #563983;
+  --light-purple: #393243;
+  --dark-purple: #432275;
+  // --alpha-purple: #c662ef;
+  --black: #000;
+  --white: #fff;
+  --red: #ff0101;
+  --yellow: #ffdb00;
+  --blue: #4a90e2;
+  --green: #50e3c2;
+
+  --sidebar-width: 240px;
+  --middle-width: calc(1920px - 240px);
+  --header-height: 70px;
+  --player-height: 90px;
+  --search-box-width: 540px;
+  --player-queue-width: 330px;
+  --main-padding: 59px;
+  --gallery-height: 240px;
+  --gallery-item-gap: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+//Scrollbar CSS
+body ::-webkit-scrollbar {
+  width: 4px;
+}
+body ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--scrollbar-bg);
+}
+body ::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--light-gray-text);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 500ms;
+}
+
+.wrapper {
+  color: var(--white);
+}
+
+//css for tooltip
+[data-tippy-root] {
+  [role='tooltip'] {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem !important;
+    transition: 2s;
+  }
+}

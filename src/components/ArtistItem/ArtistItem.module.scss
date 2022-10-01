@@ -1,0 +1,51 @@
+.wrapper {
+  width: calc(100% / 5);
+  cursor: pointer;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  &:hover img {
+    transform: scale(110%);
+  }
+}
+
+.thumbnail {
+}
+
+.body {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+}
+
+.name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.songs {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.song-item {
+  width: calc(100% / 3);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+
+  img {
+  }
+}

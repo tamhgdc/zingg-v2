@@ -1,0 +1,50 @@
+.wrapper {
+  width: calc(100% + 14px);
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.container {
+  padding: 0 14px;
+  gap: 28px;
+  margin-left: -14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex {
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grid {
+  padding: 0 14px;
+  display: grid;
+  gap: 28px;
+
+  > * {
+    width: 100% !important;
+  }
+}
+
+.spaceBetween {
+  justify-content: space-between;
+  gap: unset;
+}
+
+.footer-button {
+  margin-top: 30px;
+}

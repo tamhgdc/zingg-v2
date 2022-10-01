@@ -1,0 +1,304 @@
+.skeleton {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: linear-gradient(140deg, #231b2e, var(--light-purple), #231b2e);
+  background-size: 200%;
+  animation: loading 1500ms infinite alternate;
+}
+
+@keyframes loading {
+  to {
+    background-position: right 150%;
+  }
+}
+
+.feed-wrapper {
+  width: 100%;
+}
+
+.gallery {
+  height: var(--gallery-height);
+  display: flex;
+  gap: 28px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 215px;
+}
+
+.section {
+  width: 100%;
+  height: 345px;
+  margin-top: 50px;
+}
+
+.section-title {
+  width: 250px;
+  height: 25px;
+  margin-bottom: 16px;
+}
+
+.section-content {
+  display: flex;
+  gap: 28px;
+}
+
+.section-item {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-item-header {
+  height: 210px;
+  margin-bottom: 10px;
+}
+
+.section-item-title {
+  width: 75%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.section-item-desc {
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.chart-wrapper {
+}
+.chart-title {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.music {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  .rank {
+    width: 60px;
+  }
+
+  .status {
+    margin-right: 15px;
+    display: flex;
+  }
+
+  .thumb {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .info {
+    width: 100%;
+    height: 100%;
+    align-self: flex-start;
+  }
+
+  .name {
+    height: 15px;
+  }
+
+  .singer {
+    width: 80%;
+    height: 10px;
+    margin-top: 5px;
+  }
+}
+
+.album {
+  width: 200px;
+  height: 20px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.duration {
+  width: 10%;
+  height: 20px;
+}
+
+.small {
+  height: 60px;
+  padding: 10px 5px;
+
+  .status {
+    margin-right: 10px;
+  }
+
+  .album {
+    display: none;
+  }
+
+  .rank {
+    width: 30px;
+  }
+
+  .duration {
+    width: 15%;
+  }
+}
+
+.category-wrapper {
+  .banner {
+    width: 100%;
+    height: 342px;
+    margin-bottom: 50px;
+  }
+
+  .activity-title {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .activity-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+
+  .activity-item {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+.album-wrapper {
+  display: flex;
+  gap: 30px;
+
+  .album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .album-thumb {
+      width: 300px;
+      height: 300px;
+    }
+
+    .album-title {
+      width: 200px;
+      height: 25px;
+      margin-top: 10px;
+    }
+
+    .album-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .album-desc-item:nth-child(odd) {
+      width: 150px;
+      height: 10px;
+    }
+
+    .album-desc-item:nth-child(even) {
+      width: 200px;
+      height: 10px;
+    }
+  }
+
+  .album-songs {
+    flex: 1;
+  }
+
+  .album-heading {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.radio-wrapper {
+  .radio {
+  }
+
+  .radio-title {
+  }
+
+  .radio-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .radio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radio-item-thumb {
+    width: 145px;
+    height: 145px;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .radio-item-title {
+    width: 60%;
+    height: 15px;
+    margin-bottom: 10px;
+  }
+
+  .radio-item-desc {
+    width: 80%;
+    height: 15px;
+  }
+}
+
+.artist-wrapper {
+  .artist-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .artist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .artist-name {
+    width: 250px;
+    height: 40px;
+  }
+
+  .artist-desc {
+    width: 500px;
+    height: 10px;
+  }
+
+  .artist-thumb {
+    width: 260px;
+    height: 260px;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .artist-body {
+  }
+}

@@ -1,0 +1,74 @@
+.wrapper {
+  width: fit-content;
+  height: 33px;
+  padding: 5px 25px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+
+  &.center {
+    margin: 0 auto;
+  }
+
+  &.outline {
+    background-color: var(--dark-purple);
+    border-color: currentColor;
+
+    &:hover {
+      background-color: #482e62;
+    }
+  }
+
+  &.solid {
+    background-color: var(--purple);
+  }
+}
+
+.primary {
+  background-color: var(--purple);
+}
+
+.secondary {
+  background-color: var(--dark-gray-bg);
+}
+
+.small {
+  height: 25px;
+  padding: 4px 24px;
+}
+
+.large {
+  height: 37px;
+}
+
+.circled {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.squared {
+  border-radius: 4px;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.fontSmall {
+  font-size: 1.2rem;
+}
